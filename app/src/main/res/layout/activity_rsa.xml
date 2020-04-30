@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.RSAActivity"
+    android:padding="15dp">
+
+    <Button
+        android:id="@+id/generate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Generate"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Public key:"/>
+
+    <TextView
+        android:id="@+id/publicKey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Private key:"/>
+
+    <TextView
+        android:id="@+id/privateKey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/originalText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter yout text"/>
+
+    <Button
+        android:id="@+id/encryptRSA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Encrypt rsa"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Encrypted text:"/>
+
+    <TextView
+        android:id="@+id/encryptedText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"/>
+
+    <Button
+        android:id="@+id/decryptRSA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Decrypt rsa"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Decrypted text:"/>
+
+    <TextView
+        android:id="@+id/decryptedText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"/>
+
+</LinearLayout>
